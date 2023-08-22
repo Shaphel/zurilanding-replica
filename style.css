@@ -1,0 +1,1944 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: #f5f0ed;
+    font-family: Organica, sans-serif;
+    overflow-x: hidden;
+
+}
+header{
+    background-color: #f5f0ed;
+}
+.nav-item{
+    list-style: none;
+}
+
+.nav-link{
+    color: #410602;
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 24px; */
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px; 
+}
+.navbrand{
+    width: 7rem;
+    padding: 0 4%;
+}
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+} 
+.bar{
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #410602;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f0ed;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger{
+        display: block;
+        padding: 0 4%;
+    }
+    .navbar{
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .zurilogo{
+        width: 100%;
+    }
+
+    .nav-link{
+        /* transition: 0.7s ease; */
+        list-style: none;
+        color: #e4d3ff;
+
+    }
+    
+    .nav-menu{
+        position: absolute;
+        top: -100%;
+        /* top: 70px; */
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.8s;
+        background-color: #410602;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        top: 10%;
+    }
+    .topbtn{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 20px;
+        padding: 0 4%;
+    }
+    .navbar-partnerbtn{
+        background-color: #410602;
+        color: #e4d3ff;
+        height: 2rem;
+        width: 17rem;
+        border: 1px solid #e4d3ff;
+        border-radius: 5px;
+    }
+    .navbar-applybtn{
+        background-color: #ec4c4e;
+        color: #e4d3ff;
+        height: 2rem;
+        width: 17rem;
+        border: none;
+        border-radius: 5px;
+    }
+    .topcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .topheading{
+        padding: 4%;
+    }
+    .discover{
+        color: #410602;
+    }
+    .impactforafricansred{
+        color: #ee4c4e;
+    }
+    .aboutzuri{
+        margin-top: 5%;
+        color: #410602;
+        font-size: small;
+    }
+    .learnrecruitdiv{
+        display: flex;
+        padding: 4%;
+        gap: 5%;
+    }
+    .recruit{
+        background-color: #ee4c4e;
+        height: 2rem;
+        width: 6rem;
+        color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        font-size: x-small;
+    }
+    .learnMore{
+        background-color: #f5f0ed;
+        height: 2rem;
+        width: 8rem;
+        color: #410602;
+        border: solid 1px;
+        border-radius: 5px;
+        font-size: x-small;
+    }
+
+    .topfonticons{
+        display: flex;
+        padding: 4%;
+        gap: 10px;
+        animation: sliding-up ease 1s;
+    }
+    .group{
+        width: 40%;
+    }
+    .skillgroup{
+        width: 30%;
+    }
+    .proh2{
+        font-size: large;
+        font-weight: 800;
+        color: #410602;
+    }
+    .k::after{
+        content: 'k+';
+    }
+    .prop{
+        margin: 5% 0 0 0;
+        color: #410602;
+        font-size: small;
+
+    }
+    .smileguycontainer{
+        padding: 4%;
+    }
+    .lisacontainer{
+        display: flex;
+        border-radius: 30px;
+        background-color: rgb(65, 6, 2);
+        /* height: 70vh; */
+        width: 100%;
+        margin: 10% 0 0 0;
+        animation: sliding-up ease 100ms;
+    }
+
+    .guycomputer{
+        width: 100%;
+        padding-top: 10%;
+    }
+   .dividerpattern{
+    width: 100%;
+   }
+
+    .visionmission{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        margin: 50px 0 0 0;
+        background-color: rgba(65, 6, 2, 255);
+        /* height: 40vh; */
+        width: 100%;
+    }
+
+    .vision{
+        margin: 10% 0 0 0;
+        width: 100%;
+        padding: 4%;
+    }
+    .breakingred{
+        color: #ed4c4e;
+        padding: 0 4%;
+        margin: 0 0 2% 0;
+    }
+    .visionmissionwordsh2{
+        color: aliceblue;
+        padding: 0 4%;
+    }
+    .visionp{
+        color: aliceblue;
+        padding: 4%;
+        font-size: small;
+    }
+    .visionbtn{
+        display: flex;
+        justify-content: flex-start;
+        padding: 4%;
+        width: 100%;
+    }
+    .visionbtngetstarted{
+        background-color: #ed4c4e;
+        border: none;
+        color: aliceblue;
+        height: 2rem;
+        width: 6rem;
+        border-radius: 5px;
+        font-size: x-small;
+    }
+
+
+    .enablingafricansdivs{
+        margin: 15% 0 10% 0;
+        width: 100%;
+        padding: 4%;
+    }
+    .timelessred{
+        color: #ed4c4e;
+        font-size: x-small;
+        margin: 0 0 2% 0;
+    }
+    .enablingafricansdivs h2{
+        color: #410602;
+        margin: 0 0 5% 0;
+    }
+    .enablingp{
+        color: #410602;
+        font-size: x-small;
+    }
+
+    .applynowbtn{
+        margin: 10% 0 0 0 ;
+        background-color: #ec4d4f;
+        border: none;
+        border-radius: 5px;
+        height: 2rem;
+        width: 6rem;
+        font-size: x-small;
+        color: aliceblue;
+    }
+    
+
+    .girlsmile{
+        margin: 10% 0 0 0;
+        width: 100%;
+    }
+
+    .annualreport{
+        display: flex;
+        flex-direction: column;
+        padding: 4%;
+        background-color: #410602;
+        background-image: url(/63e4e39e40b2f91e4438555e_Group\ 162.webp);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+            
+    }
+    .report{
+        width: 100%;
+    }
+
+    .performancered{
+        color: #ed4c4e;
+        font-size: x-small;
+    }
+    .annualreport h2{
+        color: aliceblue;
+        padding: 4% 0;
+    }
+    .red22{
+        color: #ed4c4e;
+    }
+    .performancep{
+        color: aliceblue;
+        padding: 4% 0;
+        font-size: 11px;
+    }
+    .downloadreportbtn{
+        background-color: #ec4d4f;
+        color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        margin: 4% 0;
+        font-size: x-small;
+        width: 6rem;
+        height: 2rem;
+    }
+
+    .trainingprograms{
+        display: flex;
+        flex-direction: column;
+        padding: 4%;
+    }
+    .trainingcont p{
+        color: #ed4c4e;
+        font-size: x-small;
+        padding: 4% 0;
+    }
+    .trainingcont h2{
+        color: #410602;
+        padding: 4% 0;
+        width: 90%;
+    }
+
+    .wavedesign{
+        width: 70%;
+
+    }
+    .zuritraining{
+        margin: 10% 0 0 0;
+        background-color: #fff5d4;
+        color: #410602;
+        /* height: 18em; */
+        display: grid;
+        place-content: center;
+        border-radius: 15px;
+    }
+    .checkerspattern{
+        width: 100%;
+    }
+    .zuritrainingdiv{
+        padding: 4% ;
+    }
+    .numbers{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: smaller;
+        width: 2em;
+        height: 2em;
+        border: 1px solid #ec4d4f;
+        border-radius: 50%;
+        margin-top: -13%;
+    }
+    .numbers p{
+        margin-top: 50%;
+    }
+    .zuritrainingdiv h5{
+        font-size: small;
+        padding: 4% 0;
+    }
+    .zuritrainingp2{
+        padding-bottom: 4%;
+        font-size: smaller;
+    }
+
+    .zurinternship{
+        background-color: #3d101e;
+        margin: 5% 0 0 0;
+        color: aliceblue;
+        border-radius: 15px;
+        /* height: 17.5em; */
+        display: grid;
+    }
+    .brownpattern{
+        width: 100%;
+        opacity: 0.5;
+    }
+    .zurinternshipdiv{
+        padding: 4%;
+    }
+    .zurinternshipdiv h5{
+        font-size: small;
+        padding: 4% 0;
+    }
+    .internshipara{
+        padding-bottom: 4%;
+        font-size: smaller;
+    }
+    .cdtdiv{
+        margin: 5% 0 0 0;
+        background-color: #e4d3ff;
+        border-radius: 5px;
+        padding: 4%;
+    }
+
+    .checkerspattern2{
+        width: 100%;
+        
+    }
+    .cdtdiv h5{
+        color: #3d101e;
+        padding: 4% 0;
+    }
+    .cdtp{
+        padding: 4% 0;
+        color: #3d101e;
+        font-size: smaller;
+    }
+
+    .moreaboutinput{
+        display: grid;
+        place-items: center;
+        margin: 10% 0 0 0;
+        
+    }
+    .moreaboutinput input{
+        background-color: #ed4c4e;
+        color: aliceblue;
+        width: 11rem;
+        height: 2.5rem;
+        border-radius: 5px;
+        border-style: none;
+        font-size: x-small;
+    }
+
+    .picturecollage{
+        margin: 20% 0 0 0;
+        padding: 4%;
+    }
+    .framecollage{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .picturecollage span{
+        color: #ed4c4e;
+        margin-top: 10%;
+    }
+    .picturecollage h2{
+        color: #410602;
+        width: 90%;
+    }
+    .picturecollage p{
+        color: #3d101e;
+        font-size: small;
+        padding: 4% 0;
+    }
+    .picturecollageapplybtn{
+        background-color: #ec4c4e;
+        color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        height: 2rem;
+        width: 6rem;
+        font-size: x-small;
+    }
+
+    .testimonialvideo{
+        display: grid;
+        flex-direction: column;
+        place-items: center;
+        background-color: white;
+        padding: 4%;
+        text-align: center;
+    }
+    .testimonialvideo p{
+        font-size: x-small;
+        color: #ec4c4e;
+        margin: 10% 0 0 0;
+    }
+    .testimonialvideo h2{
+        color: #410602;
+        padding: 4% ;
+    }
+    .zurivideo{
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 20%;
+    }
+
+    .hiringdiv{
+        display: grid;
+        margin-top: 5%;
+        padding: 4%;
+    }
+
+    .wavepatternhiring{
+        width: 30%;
+        padding: 4% 0;
+    }
+    .hiringdiv span{
+        color: #ec4c4e;
+    }
+    .hiringdiv h2{
+        color: #3d101e;
+        padding: 4% 0;
+    }
+    .hiringdiv p{
+        color: #3d101e;
+        font-size: small;
+        padding: 4% 0;
+    }
+
+    .hiringdiv input{
+        background-color: #ed4c4e;
+        width: 9rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 5px;
+        color: aliceblue;
+    }
+    .eyeglass{
+        margin-bottom: 30%;
+    }
+    .glassesguy{
+        width: 100%;
+        padding: 10% 0;
+    }
+    .kpi{
+        margin-top: -42%;
+    }
+    .datakpi{
+        width: 20%;
+    }
+
+    .support{
+        background-color: white;
+        padding: 4%;
+    }
+    .girlsimg{
+        width: 100%;
+        padding: 5% 0;
+        margin-top: 20%;
+    }
+    .rectangleguy{
+        display: none;
+    }
+    .circledesign{
+        display: none;
+    }
+
+    .supportmission{
+        background-color: #410602;
+        padding: 4%;
+        border-radius: 10px;
+        padding-top: 10%;
+        margin-bottom: 20%;
+    }
+    .supportmission span{
+        color: #ec4c4e;
+    }
+    .supportmission h2{
+        color: aliceblue;
+        padding: 5% 0;
+    }
+    .supportmission p{
+        color: aliceblue;
+        /* padding: 5% 0; */
+        font-size: x-small;
+    }
+    .partnerwithUsbtn{
+        background-color: #ec4c4e;
+        color: #e4d3ff;
+        border: none;
+        border-radius: 5px;
+        height: 2rem;
+        width: 8rem;
+        font-size: x-small;
+        margin: 8% 0;
+    }
+
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10% 4% 0 4%;
+    }
+    .testimonials span{
+        color: #ec4c4e;
+        text-align: center;
+    }
+    .testimonials h2{
+        color: #410602;
+        text-align: center;
+    }
+    .testdiv{
+        margin-top: 10%;
+    }
+    .slider{
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        background-color: #f5f0ed;
+        overflow: hidden;
+    }
+    .slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 60%;
+        flex-shrink: 0;
+        background-color: white;
+        height: 35vh;
+        border-radius: 5px;
+        animation: slide-left cubic-bezier(0.8, 0.5, 0.8, 0.8) 10s infinite ;
+    }
+    @keyframes slide-left {
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(-150%);
+        }
+    }
+    .beneficiaryp{
+        font-size: x-small;
+        color: #410602;
+        text-align: left;
+        padding: 5%;
+        height: 70%;
+        margin-bottom: 5%;
+    }
+    .starrating{
+        width: 40%;
+        padding: 0 5%;
+        margin-top: 5%;
+    }
+    .testdiv h2{
+        font-size: small;
+        color: #410602;
+    }
+    .benepicturediv{
+        display: flex;
+        padding: 5%;
+    }
+    .benepicsdiv{
+        display: grid;
+        margin-top: 5%;
+    }
+    .spandiv{
+        display: flex;
+        flex-direction: column;
+        font-size: x-small;
+        margin: 0 0 0 3%;
+        color: #410602;
+    }
+    .benepictures{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    
+ 
+    .zurigrid2{
+        background-color: #410602;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        margin: 50px 0 0 0;
+        width: 100%;
+        
+    }
+    .join-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        padding: 4%;
+    }
+    .joinus{
+        color: #ec4c4e;
+        margin: 10% 0 2% 0;
+        font-size: small;
+    }
+    .empoweringh2{
+        color: #e4d3ff;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .partnerwithUsbtn2{
+        background-color: #ec4c4e;
+        color: #e4d3ff;
+        border: none;
+        border-radius: 5px;
+        height: 2.5rem;
+        width: 8rem;
+        font-size: x-small;
+        /* margin: 8% 0; */
+
+    }
+
+    .lastgrid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 4%;
+    }
+    .zurilogowhite{
+        margin-top: 4rem;
+        width: 50%;
+    }
+    .companylinksdiv{
+        display: flex;
+        width: 100%;
+        margin-top: 10%;
+    }
+    
+    .company{
+        display: flex;
+        flex-direction: column;
+        width: 50%; 
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+    }
+
+    .resources{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em; 
+        width: 50%;
+    }
+    .resourcesheader{
+        margin-bottom: 10%;
+        color: #e4d3ff;
+        font-size: small;
+    }
+    .lastgridh5{
+        color: #e4d3ff;
+        font-size: small;
+        margin-bottom: 10%;
+    }
+    .companylinksa{
+        text-decoration: none;
+        color: #e4d3ff;
+        font-size: small;
+        font-weight: 100;
+        margin-bottom: 10%
+    }
+    .resourcesa{
+        text-decoration: none;
+        color: #e4d3ff;
+        font-size: small;
+        font-weight: 100;
+        margin-bottom: 10%;
+        
+    }
+
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 4%;
+        justify-content: center;
+    }
+    .newsletterh5{
+        color: #e4d3ff;
+        padding: 4% 0;
+    }
+    .search-wrapper{
+        display: inline-flex;
+        position: relative;
+    }
+    .formbutton{
+        position: absolute;
+        right: 0;
+        margin: 0.5rem 0.5rem 0 0;
+        background-color: #ec4c4e;
+        color: #e4d3ff;
+        border: none;
+        height: 2rem;
+        width: 6rem;
+        border-radius: 5px;
+        font-size: x-small;
+    }
+    .search-wrapper input{
+        width: 100%;
+        height: 3rem;
+        padding: 2px 0;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .helpdesk{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .helpdesk-wrapper{
+        padding: 4%;
+        margin-bottom: 25%;
+    }
+    .helpdeskh5{
+        color: #e4d3ff;
+        margin-bottom: 5%;
+        
+    }
+    .helpdeska{
+        text-decoration: none;
+        color: #e4d3ff;
+        font-weight: 100;
+        font-size: small;
+    }
+
+    .lastemailus-wrapper{
+        padding: 4%;
+    }
+    .lastemailus{
+        color: #e4d3ff;
+        margin-bottom: 5%;
+    }
+    .lastemailus-wrapper a{
+        text-decoration: none;
+        color: #e4d3ff;
+        font-weight: 100;
+        font-size: small;
+    }
+
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .copyright-logosdiv{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    
+    .logosdiv{
+        display: flex;
+        gap: 0.5em;
+    }
+    .copyright-p{
+        text-align: center;
+        color: #e4d3ff;
+    }
+    .disclaimer-p{
+        color: #e4d3ff;
+        font-size: xx-small;
+        text-align: center;
+        padding: 4%;
+    }
+
+
+
+    /* animations */
+
+    .discover{
+        animation: sliding-up ease 250ms;
+    }
+    .aboutzuri{
+        animation: sliding-up ease 550ms;
+    }
+
+    .learnrecruitdiv{
+        animation: sliding-up ease 700ms;
+    }
+
+    @keyframes sliding-up {
+        0%{
+            transform: translateY(40%);
+            opacity: 0;
+        }
+
+        100%{
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+
+    .slide-right{
+        transform: translateX(-100%);
+    }
+
+    .slide-left{
+        transform: translateX(100%);
+    }
+    .slide-left,
+    .slide-right{
+        transition: opacity 300ms ease-in, transform 400ms ease-in;
+        opacity: 0;
+    }
+    .slide-left.appear,
+    .slide-right.appear{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    .slide-up{
+        transform: translateY(50%);
+        opacity: 0;
+        transition: transform 1s ease, opacity 1s ease-in;
+    }
+    .slide-up.appear{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+}
+
+@media screen and (min-width:769px) {
+    .navbar{
+        display: flex;
+        /* padding: 0 4%; */
+        justify-content: space-around;
+        place-items: center;
+        width: 100%;
+    }
+    .nav-menu{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        place-items: center;
+        font-size: small;
+        gap: 1rem;
+        width: 80%;
+    }
+    .zurilogo{
+        width: 100%;
+        
+    }
+    .navbrand{
+        width: 20%;
+        
+
+    }
+    .nav-item{
+        justify-content: space-between;
+        display: inline;  
+        list-style-type: none;
+        gap: 10px;
+    }
+    .nav-link{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: xx-small;
+    }
+    .topbtn{
+        display: flex;
+        gap: 1rem;
+        padding: 0 5%;
+    }
+    .navbar-partnerbtn{
+        width: 6rem;
+        height: 1.5rem;
+        background-color: #f5f0ed;
+        color: #410602;
+        border: 1px solid;
+        border-color: #410602;
+        border-radius: 5px;
+        font-size: xx-small;
+    }
+    .navbar-applybtn{
+        width: 4rem;
+        height: 1.5rem;
+        background-color: #ec4c4e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: xx-small;
+    }
+
+
+
+    
+    .main{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .topcontainer{
+        display: grid;
+        grid-template-areas: 
+        "topheading smileguycontainer"
+        "learnrecruitdiv smileguycontainer"
+        "topfonticons smileguycontainer";
+        width: 100%;
+        /* height: 40em; */
+        padding: 0 4%;
+        gap: 10px;
+    }
+    .topheading{
+        grid-area: topheading;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        /* padding: 4%; */
+        width: 100%;
+    }
+    .impactforafricansred{
+        color: #ec4c4e;
+    }
+    .discover{
+        color: #410602;
+        margin-bottom: 2%;
+        width: 90%;
+    }
+    .aboutzuri{
+        width: 90%;
+    }
+
+    .learnrecruitdiv{
+        grid-area: learnrecruitdiv;
+        display: flex;
+        gap: 5%;
+        width: 100%;
+    }
+    .recruit{
+        background-color: #ec4c4e;
+        color: #e4d3ff;
+        width: 6rem;
+        height: 3em;
+        border: none;
+        border-radius: 5px;
+    }
+    .learnMore{
+        width: 10rem;
+        height: 3em;
+        background-color: #f5f0ed;
+        color: #410602;
+        border: 1px solid #410602;
+        border-radius: 5px;
+    }
+
+    .topfonticons{
+        grid-area: topfonticons;
+        display: flex;
+        padding: 4%;
+        gap: 10px;
+        animation: sliding-up ease 1s;
+    }
+    .group{
+        width: 40%;
+    }
+    .skillgroup{
+        width: 30%;
+    }
+    .proh2{
+        font-size: large;
+        font-weight: 600;
+        color: #410602;
+    }
+    .k::after{
+        content: 'k+';
+    }
+    .prop{
+        margin: 5% 0 0 0;
+        color: #410602;
+        font-size: x-small;
+
+    }
+    .smileguycontainer{
+        grid-area: smileguycontainer;
+        width: 100%;
+    }
+    .lisacontainer{
+        animation: sliding-up ease 100ms;
+        display: flex;
+        border-radius: 30px;
+        background-color: rgb(65, 6, 2);
+        width: 20rem;
+        margin: 10% 0 0 0;
+    }
+    .guycomputer{
+        width: 100%;
+        padding-top: 25%;
+    } 
+
+    .visionmission{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5%;
+        background-color: #410602;
+        
+    }
+    .dividerpattern{
+        width: 100vw;
+        height: 50%;
+    }
+    .visioncontainer{
+        display: flex;
+        margin-top: 5%;
+        padding: 0 4% 10% 4%;
+        gap: 10px;
+    }
+    .vision{
+        width: 50%;
+        height: 50%;
+    }
+    .visionbtn{
+        display: flex;
+        flex-direction: column;
+    }
+    .breakingred{
+        color: #ed4c4e;
+        padding: 0 4%;
+        margin: 0 0 2% 0;
+    }
+    .visionmissionwordsh2{
+        color: aliceblue;
+        padding: 0 4%;
+        font-size: xx-large;
+    }
+    .visionp{
+        color: aliceblue;
+        padding: 0 4%;
+        font-size: medium;
+    }
+    .visionbtn{
+        display: flex;
+        justify-content: flex-start;
+        padding: 4%;
+        width: 100%;
+    }
+    .visionbtngetstarted{
+        background-color: #ed4c4e;
+        border: none;
+        color: aliceblue;
+        height: 2rem;
+        width: 6rem;
+        border-radius: 5px;
+        font-size: x-small;
+    }
+
+    .enablingafricansdivs{
+        width: 100%;
+        padding: 4%;
+        display: flex;
+        gap: 100px;
+    }
+    .africandivcontainer{
+        width: 50%;
+    }
+    .timelessred{
+        color: #ed4c4e;
+        font-size: x-small;
+        margin: 0 0 2% 0;
+    }
+    .enablingafricansdivs h2{
+        color: #410602;
+    }
+    .enablingp{
+        color: #410602;
+        font-size: small;
+    }
+
+    .applynowbtn{
+        margin: 10% 0 0 0 ;
+        background-color: #ec4d4f;
+        border: none;
+        border-radius: 5px;
+        height: 2rem;
+        width: 6rem;
+        font-size: x-small;
+        color: aliceblue;
+    }
+    .girlsmilediv{
+        width: 50%;
+        
+    }
+    .girlsmile{
+        width: 100%;
+    }
+
+    .annualreport{
+        display: flex;
+        justify-content: center;
+        place-content: center;
+        place-items: center;
+        padding: 4%;
+        background-color: #410602;
+        background-image: url(/63e4e39e40b2f91e4438555e_Group\ 162.webp);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        gap: 2rem;
+        width: 100%;
+            
+    }
+    .reportcontainer{
+        display: flex;
+
+    }
+    .report{
+        width: 50%;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .performancered{
+        color: #ed4c4e;
+        font-size: small;
+    }
+    .reportwords{
+        padding: 0 10px 0 10px;
+    }
+    .annualreport h2{
+        color: #f5f0ee;
+        padding: 4% 0;
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    .red22{
+        color: #ed4c4e;
+    }
+    .performancep{
+        color: #f5f0ee;
+        padding: 4% 0;
+        font-size: medium;
+    }
+    .downloadreportbtn{
+        background-color: #ec4d4f;
+        color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        margin: 4% 0;
+        font-size: x-small;
+        width: 6rem;
+        height: 2rem;
+    }
+
+    .trainingprograms{
+        display: flex;
+        flex-direction: column;
+        padding: 4%;
+    }
+    .trainingcont{
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .trainingcont p{
+        color: #ed4c4e;
+        font-size: x-small;
+        padding: 4% 0;
+    }
+    .trainingcont h2{
+        color: #410602;
+        padding: 4% 0;
+        width: 60%;
+    }
+
+    .wavedesign{
+        width: 20%;
+
+    }
+    .zuriinterncontainers{
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .zuritraining{
+        margin: 5% 0 0 0;
+        background-color: #fff5d4;
+        width: 20rem;
+        color: #410602;
+        /* height: 50rem; */
+        display: grid;
+        place-content: center;
+        border-radius: 15px;
+    }
+    .checkerspattern{
+        width: 100%;
+    }
+    .zuritrainingdiv{
+        padding: 4% ;
+
+    }
+    .numbers{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: smaller;
+        width: 2em;
+        height: 2em;
+        border: 1px solid #ec4d4f;
+        border-radius: 50%;
+        margin-top: -13%;
+    }
+    .numbers p{
+        margin-top: 50%;
+    }
+    .zuritrainingdiv h5{
+        font-size: small;
+        padding: 4% 0;
+    }
+    .zuritrainingp2{
+        padding-bottom: 4%;
+        font-size: smaller;
+    }
+
+    .zurinternship{
+        background-color: #3d101e;
+        margin: 5% 0 0 0;
+        color: aliceblue;
+        border-radius: 15px;
+        width: 20rem;
+        display: grid;
+        place-content: center;
+    }
+    .brownpattern{
+        width: 100%;
+        opacity: 0.5;
+    }
+    .zurinternshipdiv{
+        padding: 4%;
+    }
+    .zurinternshipdiv h5{
+        font-size: small;
+        padding: 4% 0;
+    }
+    .internshipara{
+        padding-bottom: 4%;
+        font-size: smaller;
+    }
+    .cdtdiv{
+        margin: 5% 0 0 0;
+        background-color: #e4d3ff;
+        border-radius: 15px;
+        padding: 4%;
+        width: 20rem;
+        display: grid;
+        place-content: center;
+    }
+
+    .checkerspattern2{
+        width: 100%;
+        
+    }
+    .cdtdiv h5{
+        color: #3d101e;
+        padding: 4% 0;
+    }
+    .cdtp{
+        padding: 4% 0;
+        color: #3d101e;
+        font-size: smaller;
+    }
+
+    .moreaboutinput{
+        display: grid;
+        place-items: center;
+        margin: 10% 0 0 0;
+        
+    }
+    .moreaboutinput input{
+        background-color: #ed4c4e;
+        color: aliceblue;
+        width: 11rem;
+        height: 2.5rem;
+        border-radius: 5px;
+        border-style: none;
+        font-size: x-small;
+    }
+
+    .picturecollage{
+        display: flex;
+        gap: 3rem;
+        padding: 4%;
+    }
+    .framecollage{
+        width: 40%;
+        height: 20%;
+        margin-top: 5%;
+    }
+    .piccollagewords{
+        display: flex;
+        flex-direction: column;
+    }
+    .picturecollagep1{
+        color: #ed4c4e;
+        margin-top: 10%;
+    }
+    .picturecollage h2{
+        color: #410602;
+        width: 100%;
+        font-size: xx-large;
+    }
+    .picturecollagep2{
+        color: #3d101e;
+        /* font-size: medium; */
+        padding: 4% 0 ;
+    }
+    .picturecollageapplybtn{
+        background-color: #ec4c4e;
+        color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        height: 2rem;
+        width: 6rem;
+        font-size: x-small;
+    }
+
+    .testimonialvideo{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        background-color: white;
+        padding: 4%;
+        text-align: center;
+    }
+    .testimonialvideo p{
+        /* font-size: small; */
+        color: #ec4c4e;
+        margin: 10% 0 0 0;
+    }
+    .testimonialvideo h2{
+        color: #410602;
+        padding: 4% ;
+    }
+    .zurivideo{
+        width: 50%;
+        border-radius: 15px;
+        margin-bottom: 20%;
+    }
+
+    .hiringdiv{
+        display: flex;
+        gap: 3em;
+        padding: 10% 4%;
+        width: 100%;
+
+    }
+    .hiringdivwords{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .hiringdiv span{
+        color: #ec4c4e;
+    }
+    .hiringdiv h2{
+        color: #3d101e;
+        padding: 4% 0;
+    }
+    .hiringdiv p{
+        color: #3d101e;
+        font-size: small;
+        padding: 4% 0;
+    }
+
+    .hiringdiv input{
+        background-color: #ed4c4e;
+        width: 9rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 5px;
+        color: aliceblue;
+    }
+    .wavepatternhiring{
+        width: 50%;
+        margin: 0 0 1rem 0;
+    }
+    .eyeglass{
+        margin-bottom: 5%;
+    }
+    .glassesguy{
+        width: 25rem;
+        /* padding: 10% 0; */
+    }
+    .kpi{
+        margin-top: -28%;
+    }
+    .datakpi{
+        width: 20%;
+    }
+
+    .support{
+        display: flex;
+        gap: 0.5rem;
+        background-color: white;
+        padding: 5% 4% 0 4%;
+        width: 100%;
+
+    }
+    .supportpictures{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 1.5em;
+    }
+    .rectangleguy{
+        width: 60%;
+        margin-left: 35%;
+    }
+    .girlsimg{
+        width: 100%;
+        margin-left: 30%;
+    }
+
+    .supportmission{
+        background-color: #410602;
+        padding: 4%;
+        border-radius: 10px;
+        padding-top: 5%;
+        margin-bottom: 10%;
+        padding-right: 20%;
+        width: 100%;
+    }
+    .circledesign{
+        width: 15%;
+        margin-top: 5%;
+
+    }
+    .supportus-p{
+        color: #ec4c4e;
+        padding-left: 20%;
+        margin-top: -12%;
+
+    }
+    .supportmission h2{
+        color: aliceblue;
+        padding-left: 20%;
+        
+        
+    }
+    .supportus-p2{
+        color: aliceblue;
+        /* padding: 5% 0; */
+        font-size: small;
+        padding-left: 20%;
+        
+    }
+    .partnerwithUsbtn{
+        background-color: #ec4c4e;
+        color: #e4d3ff;
+        border: none;
+        border-radius: 5px;
+        height: 2rem;
+        width: 8rem;
+        font-size: small;
+        margin: 8% 20%;
+    }
+
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5% 4% 0 4%;
+    }
+    .testimonials span{
+        color: #ec4c4e;
+        text-align: center;
+        font-size: large;
+    }
+    .testimonials h2{
+        color: #410602;
+        text-align: center;
+    }
+    .testdiv{
+        margin: 10% 0 10% 0;
+
+    }
+    .slider{
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        background-color: #f5f0ed;
+        overflow: hidden;
+    }
+    .slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 20em;
+        flex-shrink: 0;
+        background-color: white;
+        height: 50vh;
+        border-radius: 5px;
+        animation: slide-left cubic-bezier(0.8, 0.5, 0.8, 0.8) 10s infinite ;
+    }
+    @keyframes slide-left {
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(-150%);
+        }
+    }
+    .beneficiaryp{
+        font-size: small;
+        color: #410602;
+        text-align: left;
+        padding: 5%;
+        height: 70%;
+        margin-bottom: 5%;
+    }
+    .starrating{
+        width: 40%;
+        padding: 0 5%;
+        margin-top: 5%;
+    }
+    .testdiv h2{
+        font-size: medium;
+        color: #410602;
+    }
+    .benepicturediv{
+        display: flex;
+        padding: 5%;
+    }
+    .benepicsdiv{
+        display: grid;
+        margin-top: 5%;
+    }
+    .spandiv{
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+        margin: 0 0 0 3%;
+        color: #410602;
+    }
+    .benepictures{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+
+    .zurigrid2{
+        background-color: #410602;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        margin: 50px 0 0 0;
+        width: 100%;
+        
+    }
+    .join-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        padding: 4%;
+    }
+    .joinus{
+        color: #ec4c4e;
+        margin: 10% 0 2% 0;
+        font-size: small;
+    }
+    .empoweringh2{
+        color: #e4d3ff;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .partnerwithUsbtn2{
+        background-color: #ec4c4e;
+        color: #e4d3ff;
+        border: none;
+        border-radius: 5px;
+        height: 2.5rem;
+        width: 8rem;
+        font-size: x-small;
+        /* margin: 8% 0; */
+
+    }
+
+    .lastgrid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 4%;
+    }
+    .zurilogowhite{
+        margin-top: 4rem;
+        width: 20%;
+    }
+    .companylinksdiv{
+        display: flex;
+        width: 40%;
+        margin-top: 5%;
+    }
+    .lastgridh5{
+        font-size: medium;
+    }
+    .companylinksflex{
+        display: flex;
+    }
+    
+    .company{
+        display: flex;
+        flex-direction: column;
+        width: 50%; 
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+    }
+
+    .resources{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%; 
+        width: 20%;
+    }
+    .resourcesheader{
+        margin-bottom: 10%;
+        color: #e4d3ff;
+        font-size: medium;
+    }
+    .lastgridh5{
+        color: #e4d3ff;
+        font-size: small;
+        margin-bottom: 10%;
+    }
+    .companylinksa{
+        text-decoration: none;
+        color: #e4d3ff;
+        font-size: small;
+        font-weight: 100;
+        margin-bottom: 10%
+    }
+    .resourcesa{
+        text-decoration: none;
+        color: #e4d3ff;
+        font-size: small;
+        font-weight: 100;
+        margin-bottom: 10%;
+        
+    }
+    .newslettercontainer{
+        margin-top: 3%;
+        margin-left: 10%;
+        width: 30%;
+    }
+
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 4%;
+        justify-content: center;
+    }
+    .newsletterh5{
+        color: #e4d3ff;
+        padding: 4% 0;
+    }
+    .search-wrapper{
+        display: inline-flex;
+        position: relative;
+    }
+    .formbutton{
+        position: absolute;
+        right: 0;
+        margin: 0.5rem 0.5rem 0 0;
+        background-color: #ec4c4e;
+        color: #e4d3ff;
+        border: none;
+        height: 2rem;
+        width: 6em;
+        border-radius: 5px;
+        font-size: x-small;
+    }
+    .search-wrapper input{
+        width: 100%;
+        height: 3rem;
+        padding: 2px 0;
+        border-radius: 5px;
+        border: none;
+        font-size: small;
+        color: #410602;
+    }
+    .search-wrapper input::placeholder{
+        font-size: x-small;
+    }
+
+    .helpdesk{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .helpdesk-wrapper{
+        padding: 4%;
+        margin-bottom: 25%;
+    }
+    .helpdeskh5{
+        color: #e4d3ff;
+        margin-bottom: 5%;
+        
+    }
+    .helpdeska{
+        text-decoration: none;
+        color: #e4d3ff;
+        font-weight: 100;
+        font-size: small;
+    }
+
+    .lastemailus-wrapper{
+        padding: 4%;
+    }
+    .lastemailus{
+        color: #e4d3ff;
+        margin-bottom: 5%;
+    }
+    .lastemailus-wrapper a{
+        text-decoration: none;
+        color: #e4d3ff;
+        font-weight: 100;
+        font-size: small;
+    }
+
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .copyright-logosdiv{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .logosdiv{
+        display: flex;
+        gap: 0.5em;
+    }
+
+    .copyright-p{
+        text-align: start;
+        color: #e4d3ff;
+    }
+    .disclaimer-p{
+        color: #e4d3ff;
+        font-size: xx-small;
+        text-align: center;
+        padding: 4%;
+    }
+
+
+
+     /* animations */
+
+     .discover{
+        animation: sliding-up ease 250ms;
+    }
+    .aboutzuri{
+        animation: sliding-up ease 550ms;
+    }
+
+    .learnrecruitdiv{
+        animation: sliding-up ease 700ms;
+    }
+
+    @keyframes sliding-up {
+        0%{
+            transform: translateY(40%);
+            opacity: 0;
+        }
+
+        100%{
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+
+    .slide-right{
+        transform: translateX(-100%);
+    }
+
+    .slide-left{
+        transform: translateX(100%);
+    }
+    .slide-left,
+    .slide-right{
+        transition: opacity 300ms ease-in, transform 400ms ease-in;
+        opacity: 0;
+    }
+    .slide-left.appear,
+    .slide-right.appear{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    .slide-up{
+        transform: translateY(50%);
+        opacity: 0;
+        transition: transform 1s ease, opacity 1s ease-in;
+    }
+    .slide-up.appear{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    .logosdiv:nth-child(1){
+        transition-delay: 0s;
+    }
+    .logosdiv:nth-child(2){
+        transition-delay: 2s;
+    }
+    .logosdiv:nth-child(3){
+        transition-delay: 4s;
+    }
+    .logosdiv:nth-child(4){
+        transition-delay: 6s;
+    }
+
+}
+
